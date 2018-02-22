@@ -1,0 +1,21 @@
+.container-header{
+    background-image: url(../assets/images/layout/header-sky.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.figure-caption {
+    font-size: 12px;
+}
+
+#main-section {
+    border-top: 5px solid;
+}
+
+input[type="radio"][value="no"]:checked ~ #email-section > input {
+    visibility: hidden;
+}
+
+input[type="radio"][value="no"]:checked ~ #email-section > label {
+    visibility: hidden;
+}
