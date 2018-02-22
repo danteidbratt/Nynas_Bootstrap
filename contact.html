@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	    crossorigin="anonymous">
+	<link rel="stylesheet" href="styles/general.css">
+	<title>Nickstabadet</title>
+</head>
+
+<body>
+	<header class="container-header p-4">
+		<div class="text-primary ml-5 mt-2 mb-2">
+			<h1>Nickstabadet</h1>
+			<p>Ett soligt sommarbad</p>
+		</div>
+	</header>
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+		<button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#nicksta-navbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="nicksta-navbar">
+			<ul class="navbar-nav ml-md-5">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Hemma</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="contact.html">Kontakt</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="status.html">Väder</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Tillbaks</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container-fluid bg-light pb-5 pt-5">
+		<div class="row ml-5">
+			<div class="col-8 p-3">
+				<section class="card rounded bg-white border-primary p-4">
+					<header class="card-header bg-white ">
+						<h2>Lämna dina synpunkter här!</h2>
+					</header>
+					<form class="card-body">
+						<div class="row mb-3">
+							<label class="col-12 form-check-label" for="headline_field">Rubrik</label>
+							<input class="col-12 form-control" type="text" id="headline_field" placeholder="Rubrik" maxlength="30">
+						</div>
+						<div class="row mb-3">
+							<label class="col-12 form-check-label" for="description_field">Beskrivning </label>
+							<textarea class="col-12 form-control" name="description" id="description_field" cols="20" rows="3" maxlength="100"></textarea>
+							<div class="w-100"></div>
+							<small class="col figure-caption">Max 100 tecken</small>
+						</div>
+
+						<div class="row mb-3">
+							<label class="col-12 form-check-label" for="topic_field">Ärende</label>
+							<select class="col-4 custom-select" name="topics" id="topic_field">
+								<option value="beach">Strand</option>
+								<option value="camping">Camping</option>
+								<option value="other">Övrigt</option>
+							</select>
+						</div>
+
+						<div class="row mb-3">
+							<label class="col form-check-label">Vill du få svar på din synpunkt?</label>
+							<div class="w-100"></div>
+							<label class="ml-3 mr-2" for="reply-yes">Ja</label>
+							<input name="reply" type="radio" id="reply-yes" value="yes">
+							<label class="ml-4 mr-1" for="reply-no">Nej</label>
+							<input name="reply" type="radio" id="reply-no" value="no" checked>
+							<div class="w-100" id="email-section">
+								<label class="col-12 form-check-label" for="email_field">E-Mail</label>
+								<input class="col-12 form-control" type="text" placeholder="example@email.com" id="email_field">
+							</div>
+						</div>
+
+						<div>
+							<button class="btn btn-warning" type="submit">Skicka</button>
+						</div>
+					</form>
+				</section>
+			</div>
+		</div>
+	</div>
+	<footer class="text-center pb-5 mt-2">
+		<p>
+			Vill du veta mer? Skicka e-post till
+			<a href="mailto:asd@123.com">Dante Lundgren</a>
+		</p>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	    crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	    crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
