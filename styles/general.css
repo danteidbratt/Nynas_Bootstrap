@@ -11,10 +11,6 @@
     border-top: 5px solid;
 }
 
-input[type="radio"][value="no"]:checked ~ #email-section > input {
-    visibility: hidden;
-}
-
-input[type="radio"][value="no"]:checked ~ #email-section > label {
+#reply-no:checked ~ * {
     visibility: hidden;
 }
