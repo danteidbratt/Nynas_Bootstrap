@@ -14,3 +14,7 @@
 #reply-no:checked ~ * {
     visibility: hidden;
 }
+
+.table-data {
+    font-size: 14px;
+}
