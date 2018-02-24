@@ -15,6 +15,10 @@
     visibility: hidden;
 }
 
-.table-data {
+.table-data1 {
+    font-size: 14px;
+}
+
+.table-data2 {
     font-size: 12px;
 }
